@@ -1,6 +1,6 @@
 Name:           java_binfmt
 Version:        1.0.3
-Release:        %mkrel 2
+Release:        %mkrel 3
 Epoch:          0
 Summary:        Java Binary Kernel Support for Linux
 License:        GPL
@@ -48,5 +48,3 @@ applets. The binfmt_misc kernel module must be loaded.
 %attr(0755,root,root) %{_bindir}/javaclassname
 %attr(0755,root,root) %{_bindir}/javawrapper
 %attr(0755,root,root) %{_bindir}/appletviewerwrapper
-
-
