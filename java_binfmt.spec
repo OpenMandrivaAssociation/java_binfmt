@@ -9,7 +9,6 @@ URL:            http://developer.osdl.org/dev/robustmutexes/src/fusyn.hg/Documen
 Source0:        %{name}-%{version}.tar.bz2
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 With this package, you can directly execute Java applications and
