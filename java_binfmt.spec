@@ -5,6 +5,7 @@ Epoch:          0
 Summary:        Java Binary Kernel Support for Linux
 License:        GPL
 Group:          Development/Java
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:            http://developer.osdl.org/dev/robustmutexes/src/fusyn.hg/Documentation/java.txt
 Source0:        %{name}-%{version}.tar.bz2
 Requires(post): rpm-helper
