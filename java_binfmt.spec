@@ -1,6 +1,6 @@
 Name:           java_binfmt
 Version:        1.0.3
-Release:        %mkrel 6
+Release:        %mkrel 7
 Epoch:          0
 Summary:        Java Binary Kernel Support for Linux
 License:        GPL
@@ -8,6 +8,7 @@ Group:          Development/Java
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:            http://developer.osdl.org/dev/robustmutexes/src/fusyn.hg/Documentation/java.txt
 Source0:        %{name}-%{version}.tar.bz2
+Patch0:		jarwrapper.patch
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
 
@@ -17,6 +18,7 @@ applets. The binfmt_misc kernel module must be loaded.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %{__cc} -Wall %{optflags} -o javaclassname javaclassname.c
