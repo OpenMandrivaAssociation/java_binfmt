@@ -1,0 +1,10 @@
+--- jarwrapper.bak	2010-10-13 14:19:52.814263581 -0400
++++ jarwrapper	2010-10-13 14:20:00.784513334 -0400
+@@ -3,6 +3,6 @@
+ shift
+ 
+ . /usr/share/java-utils/java-functions
+-set_jvm
++set_javacmd
+ 
+ $JAVACMD -jar $jar $*
